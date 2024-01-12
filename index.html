@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main id="component">
+
+    <div class="component-main">
+      <div class="component-main__top">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. <br>No credit card required. </p>
+      </div>
+
+      <div class="component-main__center">
+        <div class="container-slider">
+            <div class="container-slider__pageviews">
+              <p id="pageviews"><span id="views"></span> Pageviews</p>
+              <div class="container-price__desktop">
+                <span class="price">$ <p></p>.00</span>
+                / month
+              </div>
+            </div>
+            <div class="slider">
+              <input type="range" name="" id="myslider" step="25">
+            </div>
+            <div class="container-price">
+              <span class="price">$ <p></p>.00</span>
+              / month
+            </div>
+            <div class="container-switch">
+              <p>Monthly Billing</p>
+              <div class="switch">
+                <div class="circle"></div>
+              </div>
+              <p>Yearly Billing</p>
+              <div class="discount">
+                <p id="discount-number">-25%</p>
+                <p id="discount-text">discount</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="component-main__bottom">
+        <div class="features">
+          <div class="feature">
+            <div class="feature-img">
+              <img src="images/icon-check.svg" alt="" srcset="" class="check-img">
+            </div>
+            <div class="feature-p">
+              <p>Unlimited websites</p>
+            </div>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-img">
+              <img src="images/icon-check.svg" alt="" srcset="" class="check-img">
+            </div>
+            <div class="feature-p">
+              <p>100% data ownership</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-img">
+              <img src="images/icon-check.svg" alt="" srcset="" class="check-img">
+            </div>
+            <div class="feature-p">
+              <p>Email reports</p>
+            </div>
+          </div>
+    
+        </div>
+
+        <button>Start my trial</button>
+      </div>
+    </div>
+    
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">ScreamPunk27</a>.
+    </div>
+  </main>
+  
+  <script src="js/pricing.js"></script>
+
+</body>
+</html>
